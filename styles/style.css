@@ -9,22 +9,28 @@ body{
     background-image: url("../images/DataCenter.png.avif");
     background-size: cover;
     background-attachment: fixed;
-    background-position: bottom;
+    background-position: center;
 }
 
 .container{
     min-height: 100dvh;
-    width: 100%;
-    background-color: rgba(255, 250, 237, 0.1);
+    width: 92%;
+    max-width: 1100px;
+    margin: 25px auto;
+    padding-bottom: 40px;
+    border-radius: 16px;
+    background-color: rgba(255, 250, 237, 0.88);
+    backdrop-filter: blur(6px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
 }
 
 .pageTitle{
-    padding-top: 50px;
+    padding-top: 40px;
     text-align: center;
 }
 
 .resourceContainer{
-    margin: 30px auto;
+    margin: 20px auto;
     max-width: 800px;
 }
 
@@ -32,6 +38,7 @@ body{
     text-align: center;
     text-decoration: underline;
     margin-top: 30px;
+    margin-bottom: 10px;
 }
 
 .resources{
@@ -42,12 +49,15 @@ body{
 }
 
 .resource{
-    margin: 10px 25px;
+    margin: 10px 20px;
+    padding: 10px;
+    border-radius: 10px;
     transition: .3s ease-in-out;
 }
 
 .resource:hover{
-    transform: scale(1.2);
+    transform: scale(1.12);
+    background-color: rgba(255, 255, 255, 0.7);
 }
 
 .resourceLink{
@@ -62,6 +72,7 @@ body{
 .resourceLink img{
     width: 50px;
     height: 50px;
+    margin-bottom: 6px;
 }
 
 .resourceLink p{
@@ -70,51 +81,61 @@ body{
 
 #resumeDownload{
     display: block;
-    max-width: 200px;
+    max-width: 220px;
     text-align: center;
     border: 2px solid black;
     border-radius: 10px;
-    padding: 10px 2.5px;
-    margin: 15px auto 0 auto;
+    padding: 10px 15px;
+    margin: 20px auto 0 auto;
     color: black;
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.85);
     font-family: sans-serif;
+    font-weight: bold;
     text-decoration: none;
     box-shadow: 0 0 0 black;
     transition: 0.3s ease-in-out;
 }
 
 #resumeDownload:hover{
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: white;
     transform: translate(-3px, -3px);
     box-shadow: 3px 3px 0 black;
 }
 
 .projectsContainer{
-    max-width: 1520px;
+    max-width: 1000px;
     margin: 0 auto;
-    padding: 50px 0;
+    padding: 40px 20px 10px 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .project{
-    max-width: 300px;
-    margin: 20px 0;
+    max-width: 280px;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.75);
 }
 
 .projectTitle{
     text-align: center;
     text-decoration: underline;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .projectLink{
-    max-width: 250px;
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
 }
 
 .projectImage{
     width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
 }
