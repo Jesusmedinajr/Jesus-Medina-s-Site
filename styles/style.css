@@ -6,7 +6,7 @@
 
 body{
     background-color: rgb(255, 250, 237);
-    background-image: url(../images/background.jpg);
+    background-image: url("../images/DataCenter.png.avif");
     background-size: cover;
     background-attachment: fixed;
     background-position: bottom;
@@ -15,7 +15,7 @@ body{
 .container{
     min-height: 100dvh;
     width: 100%;
-    background-color: rgba(255, 250, 237, 0.4);
+    background-color: rgba(255, 250, 237, 0.1);
 }
 
 .pageTitle{
